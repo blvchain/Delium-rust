@@ -121,16 +121,16 @@ use delium::{d256, d512, d256c, d512c};
 
 fn main() {
   // Simple delium
-  let simpleDelium = d256("example mnemonic", 3, 5);
+  let simple_delium = d256("example mnemonic", 3, 5);
 
-  println("Byte Slice: {}", simpleDelium.byte_slice);  // prints the byte slice of the simple delium hash
-  println("Hex string: {}", simpleDelium.string);      // prints the hexadecimal string of the simple delium hash
+  println!("Byte Slice: {:?}", simple_delium.byte_slice);  // prints the byte slice of the simple delium hash
+  println!("Hex string: {}", simple_delium.string);      // prints the hexadecimal string of the simple delium hash
 
   // Complex delium
-  const path: &str = "2h4usk#5/73uytg#9/#4";
-  let complexDelium = d256c("example mnemonic", path);
+  const PATH: &str = "2h4usk#5/73uytg#9/#4";
+  let complex_delium = d256c("example mnemonic", PATH);
 
-  println("Byte Slice: {}", complexDelium.byte_slice);  // prints the byte slice of the complex delium hash
-  println("Hex string: {}", complexDelium.string);     // prints the hexadecimal string of the complex delium hash
+  println!("Byte Slice: {:?}", complex_delium.byte_slice);  // prints the byte slice of the complex delium hash
+  println!("Hex string: {}", complex_delium.string);     // prints the hexadecimal string of the complex delium hash
 }
 ```
