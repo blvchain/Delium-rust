@@ -1,0 +1,14 @@
+[package]
+name = "delium"
+version = "1.0.0"
+edition = "2024"
+description = "🔑 Hashing method based on deleting + salt"
+license = "MIT"
+repository = "https://github.com/blvchain/Delium-rust"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+hex = "0.4.3"
+sha2 = "0.10.9"
