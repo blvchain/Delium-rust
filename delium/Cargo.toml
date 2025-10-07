@@ -5,6 +5,9 @@ edition = "2024"
 description = "🔑 Hashing method based on deleting + salt"
 license = "MIT"
 repository = "https://github.com/blvchain/Delium-rust"
+homepage = "https://github.com/blvchain/Delium-rust"
+documentation = "https://docs.rs/delium"
+readme = "README.md"
 
 [lib]
 crate-type = ["rlib"]
